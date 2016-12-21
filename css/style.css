@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+/*---BASE---*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body{
+  background-color: #fff;
+  color: #fff;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+	text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+	text-
+	/*overflow-x: hidden;*/
+}
+.index{
+	background: url(../img/bg/indexBg.jpg) center no-repeat;
+	background-size: cover;
+}
+/*.container{
+	width: 940px;
+}*/
+
+/*---GLOBAL---*/
+
+h2{
+	font-size: 200%;
+}
+p{
+	line-height: 24px;
+	background: none;
+}
+section{
+	margin: 30px auto;
+}
+
+/*---HEADER---*/
+.hero-logo{
+	margin: 60px auto 0 auto;
+}
+/*---NAVBAR---*/
+.navbar-inverse {
+  background-color: #000;
+  border:none;
+}
+.navbar-inverse .navbar-nav > li > a {
+  padding: 30px 20px;
+	color: #fff;
+}
+.login::before{
+	content: "\f090";
+	display: inline-block;
+	/*No idea why tho, lol*/
+	vertical-align: top;
+	/*Google it later*/
+	margin-right:15px;
+	font-family:'FontAwesome';
+	font-size: 20px;
+	color: grey;
+	opacity: 0.8;
+}
+
+/*---FEATURES SECTION---*/
+
+.features{
+	margin-top: 0;
+}
+.feature{
+	padding: 0 30px;
+	text-align: center;
+}
+.feature h2::after{
+	content: "";
+	display: block;
+	margin: 20px auto 35px auto;
+	width: 30px;
+	height: 30px;
+	transform: rotate(45deg);
+	background-color: white;
+}
