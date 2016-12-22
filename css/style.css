@@ -30,14 +30,58 @@ body{
 /*---GLOBAL---*/
 
 h2{
+	margin-bottom: 40px;
 	font-size: 200%;
 }
 p{
 	line-height: 24px;
 	background: none;
 }
+time{
+	font-weight: 300;
+}
+ul{
+	list-style: none;
+	margin-bottom: 35px;
+}
 section{
-	margin: 30px auto;
+	display: block;
+}
+.section-container{
+	width: 100%;
+	margin-top: 30px;
+	padding: 55px 80px;
+	background:
+		url(../img/bg/sectionSeparator.png) center no-repeat,
+		url(../img/bg/sectionBg.png);
+	color: black;
+}
+.section-container section:first-child{
+	padding-right: 60px;
+}
+.section-container section:last-child{
+	padding-left: 60px;
+}
+.btn-container{
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+}
+.btn,
+.btn:link,
+.btn:visited,
+input[type=submit]{
+	display: inline-block;
+	width: 140px;
+	border-radius: 0;
+	padding: 16px 35px;
+	background-color: black;
+	color: white;
+}
+.btn-container .btn{
+	width: 45%;
+	margin: 0;
 }
 
 /*---HEADER---*/
@@ -69,7 +113,8 @@ section{
 /*---FEATURES SECTION---*/
 
 .features{
-	margin-top: 0;
+	padding-bottom: 30px;
+	margin:0 auto 30px;
 }
 .feature{
 	padding: 0 30px;
@@ -83,4 +128,19 @@ section{
 	height: 30px;
 	transform: rotate(45deg);
 	background-color: white;
+}
+
+/*---NEWS SECTION---*/
+
+.news-preview li{
+	display: block;
+	margin-bottom: 30px;
+}
+
+/*---GALLERY---*/
+.gallery .carousel{
+	margin-bottom: 45px;
+}
+.gallery img{
+	border: 5px solid white;
 }
