@@ -79,6 +79,10 @@ input[type=submit]{
 	background-color: black;
 	color: white;
 }
+.btn:hover{
+	background-color: #663D15;
+	color: white;
+}
 .btn-container .btn{
 	width: 45%;
 	margin: 0;
@@ -96,6 +100,9 @@ input[type=submit]{
 .navbar-inverse .navbar-nav > li > a {
   padding: 30px 20px;
 	color: #fff;
+}
+.navbar-inverse .navbar-nav > li > a:hover{
+	background-color: #242424;
 }
 .login::before{
 	content: "\f090";
@@ -152,13 +159,15 @@ input[type=submit]{
 
 /*---CONTACT FORM---*/
 
-.appointment-form input{
+.appointment-form input:not(:last-child){
 	width: 44.5%;
 	height: 50px;
 	padding-left: 17px;
 	background-color: transparent;
 	border: 2px solid black;
-	
+}
+.appointment-form input:focus{
+	border: 2px solid #663D15;
 }
 .appointment-form input:first-child{
 	margin: 0 5% 5% 0;
@@ -206,9 +215,10 @@ footer .social a{
 	font-size: 150%;
 	color: white;
 }
+footer .social a:hover{
+	background-color: white;
+	color: black;
+}
 footer .social a:nth-child(2){
 	margin: 0 5px;
-}
-
-	float: right;
 }
