@@ -222,3 +222,60 @@ footer .social a:hover{
 footer .social a:nth-child(2){
 	margin: 0 5px;
 }
+
+/*---QUERIES---*/
+
+@media(max-width:991px){
+	.section-container{
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		background: none;
+	}
+	.section-container section:not(.features){
+		margin-top: 40px;
+		padding: 30px;
+		background: url(../img/bg/sectionBg.png);
+	}
+	.appointment-form input:first-child{
+		margin: 0 2.5% 2.5% 0;
+	}
+	.appointment-form input:nth-child(2){
+		margin: 0 0 2.5% 2.5%;
+	}
+	.appointment-form input:nth-child(3){
+		margin: 2.5% 2.5% 0 0;
+	}
+	.appointment-form input:nth-child(4){
+		margin: 2.5% 0 0 2.5%;
+	}
+	.appointment-form input:last-child{
+		margin-top: 35px;
+		width: 100%;
+	}
+	.appointment-form input:not(:last-child){
+		width: 47.2%;
+	}
+	footer div:not(:last-child){
+		margin-bottom: 40px;
+		text-align: center;
+	}
+}
+@media(max-width:767px){
+	.navbar-inverse .navbar-nav > li > a {padding: 10px 20px;}
+}
+@media(max-width:573px){
+	.btn,
+	.btn:link,
+	.btn:visited{
+		padding: 17px 0;
+		text-align: center;
+	}
+	.section-container section:not(.features){
+		padding:15px;
+	}
+	.appointment-form input{
+		width: 100%!important;
+		margin: 10px 0!important;
+	}
+}
