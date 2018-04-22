@@ -157,8 +157,8 @@
 						УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ
 					</p>
 					<form method="post" action="#" class="appointment-form">
-						<input type="date" name="date" placeholder="Дата">
-						<input type="time" name="time" placeholder="Время">
+						<input type="text" name="date" placeholder="Дата" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}">
+						<input type="text" name="time" placeholder="Время" onfocus="(this.type='time')" onblur="if(this.value==''){this.type='text'}">
 						<input type="text" name="name" placeholder="Ваше имя">
 						<input type="tel" name="phone" placeholder="Телефон">
 						<input class="btn" type="submit">
